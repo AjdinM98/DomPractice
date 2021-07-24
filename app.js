@@ -56,8 +56,8 @@ resetButton.addEventListener('click',function(){
     win.remove()
     select.value=5;
     playTo=5;
-    player1Button.innerText="Player1"
-    player2Button.innerText="Player2"
+    player1Button.innerText="Player1 +1"
+    player2Button.innerText="Player2 +1"
 
 })
 select.addEventListener('change',function(){    
