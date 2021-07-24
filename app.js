@@ -14,6 +14,8 @@ let counter1=0;
 let counter2=0;
 let playTo=5;
 const win=document.createElement('h1');
+const audio = new Audio('mladja-big-time-feat-jovan-peris.mp3');
+
 
 player1Button.addEventListener('click',function(){
     counter1++;
@@ -72,5 +74,5 @@ inputForma.addEventListener('submit',function(e){
     player2Ime=player2Name.value;
     player1Name.value='';
     player2Name.value='';
-    
+    audio.play();
 })
