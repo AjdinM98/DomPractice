@@ -8,47 +8,66 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <div class="container justify-content-center">
-        <h3 class="text-center pt-3">Type in Player names</h3>
-        <form class=" text-center pt-3"  action="" id="inputForm">
-            <label for="Player1">Player 1 </label>
-            <input type="text" name="Player1">
-            <label for="Player2">Player 2</label>
-            <input type="text" name="Player2">
-            <button type="submit">
-                Ok
-            </button>
-        </form>
+    <div class="container">
+        
+     
         
         <div class="row justify-content-center">
-          
-            <div class="col-lg-6 col-sm-12 " id="main">
-                
-                <img class="img-fluid" src="./img/Ping_Pong.jpg" alt="" height="">
-                <h6 class="p-2 border m-0">Ping pong score keeper</h6>
-                <div class=" ps-4 border-top-0 border">
-                    <h3 class=""><span id="player1Score">0</span> to <span id="player2Score">0</span> </h3>
-                    <p>Use the buttons bellow to keep score</p>
-                    
-                    <form action="/">
-                        <h3 class="d-inline">Playing to</h3>
-                        <div class="d-inline ms-3">
-                            <select class="p-1 rounded" name="select" id="select">
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                            </select>
+
+            <div class="col-lg-8 col-sm-12 ">
+                <div class="col-lg-6 col-sm-12 mx-auto">
+                    <h3 class="text-center pt-3">Type in Player names</h3>
+                    <form class=" pt-3"  action="" id="inputForm">
+                        <div class="row">
+                            <div class="col ">
+                                <label class="form-label" for="Player1">Player 1 </label>
+                                <input class="form-control" type="text" name="Player1">
+                            </div>
+                            <div class="col">
+                                <label  class="form-label" for="Player2">Player 2</label>
+                                <input class="form-control" type="text" name="Player2">
+                            </div>
+                            
+                            </div>
+                            <div class="text-center pt-2">
+                                <button class="btn btn-success"  type="submit">
+                                    Ok
+                                </button>
+                            </div>
+    
+                        </form>
                         </div>
-                    </form>
+                        
+                <div class="col-lg-6 col-sm-12  mx-auto " id="main">
                     
-                    <button type="button" class="btn btn-success" id="player1Button">Player 1</button>
-                    <button type="button" class="btn btn-primary" id="player2Button">Player 2</button>
-                    <button type="button" class="btn btn-danger" id="resetButton">Reset</button>
+                    <img class="img-fluid" src="./img/Ping_Pong.jpg" alt="" height="">
+                    <h6 class="p-2 border m-0">Ping pong score keeper</h6>
+                    <div class=" ps-4 border-top-0 border pb-4">
+                        <h3 class=""><span id="player1Score">0</span> to <span id="player2Score">0</span> </h3>
+                        <p>Use the buttons bellow to keep score</p>
+                        
+                        <form action="/">
+                            <h3 class="d-inline">Playing to</h3>
+                            <div class="d-inline ms-3">
+                                <select class="p-1 rounded" name="select" id="select">
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                </select>
+                            </div>
+                        </form>
+                        
+                        <button type="button" class="btn btn-success" id="player1Button">Player 1</button>
+                        <button type="button" class="btn btn-primary" id="player2Button">Player 2</button>
+                        <button type="button" class="btn btn-danger" id="resetButton">Reset</button>
+                    </div>
                 </div>
             </div>
-            
-               
+
+           
+
+            </div>
             
         </div>
     </div>
