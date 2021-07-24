@@ -55,7 +55,7 @@ resetButton.addEventListener('click',function(){
     win.classList.remove("text-success","text-primary");
     win.remove()
     select.value=5;
-    playTo=parseInt(this.value);
+    playTo=5;
     player1Button.innerText="Player1"
     player2Button.innerText="Player2"
 
