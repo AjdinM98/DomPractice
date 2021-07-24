@@ -66,8 +66,8 @@ select.addEventListener('change',function(){
 
 inputForma.addEventListener('submit',function(e){
     e.preventDefault();
-    player1Button.innerText=`P1 - ${player1Name.value}`;
-    player2Button.innerText=`P2 - ${player2Name.value}`;
+    player1Button.innerText=`P1 - ${player1Name.value} +1`;
+    player2Button.innerText=`P2 - ${player2Name.value} +1`;
     player1Ime=player1Name.value;
     player2Ime=player2Name.value;
     player1Name.value='';
