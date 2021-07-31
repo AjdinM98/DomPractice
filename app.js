@@ -14,7 +14,7 @@ let counter1=0;
 let counter2=0;
 let playTo=5;
 const win=document.createElement('h1');
-const audio = new Audio('mladja-big-time-feat-jovan-peris.mp3');
+const body =document.querySelector('body');
 
 
 player1Button.addEventListener('click',function(){
@@ -62,7 +62,8 @@ resetButton.addEventListener('click',function(){
     player2Button.innerText="Player2 +1"
 
 })
-select.addEventListener('change',function(){    
+
+select.addEventListener('change',function(){  
     playTo=parseInt(this.value);
 })
 
@@ -74,5 +75,30 @@ inputForma.addEventListener('submit',function(e){
     player2Ime=player2Name.value;
     player1Name.value='';
     player2Name.value='';
-    audio.play();
+
 })
+
+// const request = new XMLHttpRequest();
+// request.addEventListener('readystatechange',()=>{
+//     // console.log(request);
+//     // console.log(request.readyState);
+//     if(request.status===200)
+//     console.log(request.responseText)
+// })
+// request.open('GET','https://jsonplaceholder.typicode.com/posts/')
+// request.send();
+
+// fetch('https://jsonplaceholder.typicode.com/posts/').then(response =>{
+//     return response.json();
+// }).then(data=>{
+//     console.log(data[0]);
+// }).catch(err =>{
+//     console.log("shit")
+// })
+
+const getTodos = async()=>{
+   const response = await fetch('https://jsonplaceholder.typicode.com/posts/');
+   const data = await response.json();
+   return data
+}
+getTodos();
